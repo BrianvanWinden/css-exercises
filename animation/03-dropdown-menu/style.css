@@ -10,7 +10,9 @@
 
 .menu-title {
   background-color: rgb(163, 162, 162);
+  /* transition: 0.2s border-top-width ease, 0.3s border-top-color */
 }
+
 
 .dropdown-menu {
   list-style: none;
@@ -29,4 +31,9 @@ ul.dropdown-menu li:hover {
   display: block;
 }
 
+/* Solution */
 
+
+.menu-title:after{
+  transition: 0.5 border-top;
+}
